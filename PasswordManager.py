@@ -84,6 +84,7 @@ def main():
                 if gen_pass == "Y" or gen_pass == "y":
                     password = generate_password()
                     pyperclip.copy(password)
+                    print("Password copied to clipboard. Save it somewhere!")
                 elif gen_pass == "N" or gen_pass == "n":
                     password = getpass("Password: ")
                 else:
